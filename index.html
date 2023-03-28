@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles//style.css">
+    <title>My Project</title>
+</head>
+<body>
+    <script src="js/jquery-3.6.4.min.js"></script>
+
+    <div class="container">
+        <div class="panel active" style="background-image: url('https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <h3 id="agegarMascota">Agregar Mascota</h3>
+        </div>
+
+        <div class="panel"
+            style="background-image: url('https://images.pexels.com/photos/1378849/pexels-photo-1378849.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <h3 id="asignarDueno">Asignar Dueño</h3>
+        </div>
+
+        <div class="panel"
+            style="background-image: url('https://images.pexels.com/photos/164446/pexels-photo-164446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <h3 id="eliminarDueno">Eliminar Dueño</h3>
+        </div>
+
+        <div class="panel"
+            style="background-image: url('https://images.pexels.com/photos/14227693/pexels-photo-14227693.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+            <h3 id="eliminarMascota">Eliminar Mascota</h3>
+        </div>
+    </div>
+
+    <dialog id="modal__agregar__mascota">
+        <div class="modal__tittle__container">
+            <button id="btn-cerrar-modal-agregar-mascota" class="modal__btn__close">X</button>
+            <h3>Agregar Mascota</h3>
+        </div>
+        <div class="modal__container__form">
+            <div class="modal__container__name__form">
+                <label class="labels">Nombre Mascota</label>
+                <input class="modal__input__name" type="text" id="namePet" placeholder="Baldo" />
+            </div>
+            <div class="modal__container__name__form">
+                <label class="labels">Tipo Mascota</label>
+                <select id="type" class="modal__select__form">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="tortuga">Tortuga</option>
+                    <option value="pajaro">Pájaro</option>
+                    <option value="cabra">Cabra</option>
+                    <option value="caballo">Caballo</option>
+                    <option value="cisne">Cisne</option>
+                    <option value="hamster">Hamster</option>
+                </select>
+            </div>
+            <button class="btn__add" id="handlePost">Agregar</button>
+        </div>
+    </dialog>
+
+    <dialog id="modal__asignar__dueno">
+        <div class="modal__tittle__container">
+            <button id="btn-cerrar-modal-asignar-dueno" class="modal__btn__close">X</button>
+            <h3>Asignar Dueño</h3>
+        </div>
+    </dialog>
+
+    <dialog id="modal__eliminar__dueno">
+        <div class="modal__tittle__container">
+            <button id="btn-cerrar-modal-eliminar-dueno" class="modal__btn__close">X</button>
+            <h3>Eliminar Dueño</h3>
+        </div>
+    </dialog>
+
+    <dialog id="modal__eliminar__mascota">
+        <div class="modal__tittle__container">
+            <button id="btn-cerrar-modal-eliminar-mascota" class="modal__btn__close">X</button>
+            <h3>Eliminar Mascota</h3>
+        </div>
+    </dialog>
+
+    <script src="/js/script.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/ajaxMethods/ajaxRequest.js"></script>
+</body>
+</html>
