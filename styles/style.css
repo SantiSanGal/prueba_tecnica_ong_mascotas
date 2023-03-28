@@ -84,7 +84,8 @@ body{
 }
 
 @media(max-width:480px){
-    #modal__agregar__mascota{
+    #modal__agregar__mascota,
+    #modal__asignar__dueno{
         width:100vw;
     }
 }
