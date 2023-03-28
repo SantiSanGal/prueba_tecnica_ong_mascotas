@@ -35,7 +35,7 @@
             <button id="btn-cerrar-modal-agregar-mascota" class="modal__btn__close">X</button>
             <h3>Agregar Mascota</h3>
         </div>
-        <div class="modal__container__form">
+        <form  id="form__post" method="post" class="modal__container__form">
             <div class="modal__container__name__form">
                 <label class="labels">Nombre Mascota</label>
                 <input class="modal__input__name" type="text" id="namePet" placeholder="Baldo" />
@@ -53,8 +53,8 @@
                     <option value="hamster">Hamster</option>
                 </select>
             </div>
-            <button class="btn__add" id="handlePost">Agregar</button>
-        </div>
+            <button class="btn__add">Agregar</button>
+        </form>
     </dialog>
 
     <dialog id="modal__asignar__dueno">
@@ -62,6 +62,17 @@
             <button id="btn-cerrar-modal-asignar-dueno" class="modal__btn__close">X</button>
             <h3>Asignar Dueño</h3>
         </div>
+        <form id="form__post__dueno" method="post" class="modal__container__form">
+            <div class="modal__container__name__form">
+                <label class="labels">Código Mascota</label>
+                <input type="text" id="COD_MASCOTA" class="modal__input__name">
+            </div>
+            <div class="modal__container__name__form">
+                <label class="labels">Dueño</label>
+                <input type="text" id="DUENO" class="modal__input__name">
+            </div>
+            <button class="btn__add">Agregar Dueño</button>
+        </form>
     </dialog>
 
     <dialog id="modal__eliminar__dueno">
@@ -76,6 +87,11 @@
             <button id="btn-cerrar-modal-eliminar-mascota" class="modal__btn__close">X</button>
             <h3>Eliminar Mascota</h3>
         </div>
+    </dialog>
+
+    <dialog class='modal__exitoso'>
+        <div>Datos Enviados!</div>
+        <button id="modal__exitoso">Aceptar</button>
     </dialog>
 
     <script src="/js/script.js"></script>
