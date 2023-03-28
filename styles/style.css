@@ -57,7 +57,7 @@ body{
     .container{
         width:100vw;
         flex-direction: column;
-        height: 100vh;
+        height: 90vh;
     }
 }
 
@@ -85,6 +85,12 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-direction: row-reverse;
+}
+
+@media(max-width:480px){
+    #modal__agregar__mascota{
+        width:100vw;
+    }
 }
 
 .modal__btn__close{
